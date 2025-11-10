@@ -1,0 +1,12 @@
+{
+  "name": "pdc",
+  "version": "1.0.0",
+  "scripts": {
+    "start:back": "cd back && npm run start",
+    "start:front": "cd front && npm start",
+    "start": "concurrently \"npm run start:back\" \"npm run start:front\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
